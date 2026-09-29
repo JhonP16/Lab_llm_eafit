@@ -1,0 +1,13 @@
+# OPCIONAL. Para activarlos en Streamlit Cloud, copia las líneas que quieras a requirements.txt.
+# La app detecta qué está instalado; sin ellos usa alternativas locales.
+
+# Sintaxis (profundidad del árbol y POS). Modelos vía URL, sin comandos extra:
+spacy>=3.7
+es_core_news_sm @ https://github.com/explosion/spacy-models/releases/download/es_core_news_sm-3.8.0/es_core_news_sm-3.8.0-py3-none-any.whl
+en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl
+
+# Gramática objetiva. Además agrega "default-jre-headless" a packages.txt (necesita Java)
+language-tool-python>=2.8
+
+# EasyOCR (no recomendado en Cloud: descarga PyTorch y agota la memoria)
+# easyocr>=1.7
